@@ -1,6 +1,4 @@
-package Arrays;
-
-import java.util.ArrayList;
+package arrays;
 
 public class SetMatrixZero {
     public static void setZeroes(int[][] matrix) {

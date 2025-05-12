@@ -1,4 +1,4 @@
-package Arrays;
+package arrays;
 
 public class SubArrayLen3 {
     public int countSubarrays(int[] nums) {

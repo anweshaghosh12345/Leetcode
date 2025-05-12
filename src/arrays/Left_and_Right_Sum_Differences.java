@@ -1,4 +1,4 @@
-package Arrays;
+package arrays;
 
 public class Left_and_Right_Sum_Differences {
     public int[] leftRightDifference(int[] nums) {

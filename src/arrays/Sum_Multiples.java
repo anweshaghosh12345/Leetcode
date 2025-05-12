@@ -1,6 +1,4 @@
-package Arrays;
-
-import java.util.ArrayList;
+package arrays;
 
 public class Sum_Multiples {
     public int sumOfMultiples(int n) {

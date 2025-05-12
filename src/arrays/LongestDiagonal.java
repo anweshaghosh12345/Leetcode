@@ -1,6 +1,4 @@
-package Arrays;
-
-import java.util.ArrayList;
+package arrays;
 
 public class LongestDiagonal {
     public static int longestLength(int[][] matrix){
