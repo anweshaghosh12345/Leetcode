@@ -2,28 +2,29 @@ package LinkList;
 
 public class RemoveNthFromTheEnd {
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        if(head==null)
+            return head;
+        if(head.next==null)
+            return null;
         ListNode temp=head;
-        int count=0;
+        int i=0;
         while (temp!=null){
             temp=temp.next;
-            count++;
+            i++;
         }
-        int t=count-n;
-        if(t==0 || count==0){
-            ListNode newH=head.next;
-            head=null;
-            return newH;
+        if(i==n){
+            return head.next;
         }
-        temp =head;
+        int k=i-n;
+        temp=head;
+        while (temp!=null){
+            k--;
+            if(k==0)
+                break;
+            temp=temp.next;
 
-        int t1=0;
-       while (t!=t1 && temp!=null){
-           temp = temp.next;
-           t1++;
-       }
-       ListNode del= temp.next;
-       temp.next= temp.next.next;
-        del=null;
+        }
+        temp.next=temp.next.next;
         return head;
     }
 }
